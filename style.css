@@ -42,6 +42,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .header {
   border: 1px solid lightgray;
   width: 35rem;
@@ -81,6 +82,7 @@ body {
   padding: 0.5rem;
   text-transform: uppercase;
 }
+
 .scoreName {
   font-size: 0.7rem;
   text-align: center;
@@ -149,7 +151,6 @@ body {
   justify-content: center;
   border-radius: 50%;
   position: relative;
-  margin: 3rem auto;
 }
 
 .firstBox,
@@ -183,7 +184,6 @@ body {
 
 .msgBox {
   width: 25rem;
-  height: rem;
   position: absolute;
   top: -350px;
   left: -150px;
@@ -221,6 +221,7 @@ body {
 
 #userSelected,
 #computerSelected {
+  margin: 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -231,8 +232,118 @@ body {
 #computerSelected {
   color: var(--clr-cyan);
 }
-@media screen and (min-width: 375px) {
-}
 
-@media screen and (min-width: i366px) {
+@media screen and (max-width: 480px) {
+  .gameContainer {
+    justify-content: space-evenly;
+  }
+
+  .header {
+    width: 17rem;
+    height: 6rem;
+    padding: 0;
+  }
+
+  .rockName,
+  .paperName,
+  .scissorsName,
+  .lizardName,
+  .spockName {
+    font-size: 0.65rem;
+  }
+
+  .score {
+    width: 60%;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .userScore,
+  .computerScore {
+    width: 25vw;
+    height: 50wh;
+  }
+
+  .scorePoint {
+    font-size: 1.5rem;
+  }
+
+  .scoreName {
+    font-size: 0.5rem;
+  }
+
+  .iconContainer {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .btnRock,
+  .btnPaper,
+  .btnScissors,
+  .btnLizard,
+  .btnSpock {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.3rem;
+    border: 0.5rem solid;
+  }
+
+  .firstBox {
+    position: absolute;
+    top: -35px;
+  }
+
+  .secondBox {
+    margin-top: 8rem;
+    gap: 10rem;
+  }
+
+  .thirdBox {
+    margin: 3rem auto;
+    gap: 4rem;
+  }
+
+  .btnRock {
+    border-color: var(--clr-rock-gradient);
+  }
+
+  .btnPaper {
+    border-color: var(--clr-light-paper-gradient);
+  }
+
+  .btnScissors {
+    border-color: var(--clr-scissors-gradient);
+  }
+
+  .btnLizard {
+    border-color: var(--clr-lizard-gradient);
+  }
+
+  .btnSpock {
+    border-color: var(--clr-cyan);
+  }
+
+  .btnPlayAgain {
+    width: 8rem;
+  }
+
+  #userSelected,
+  #computerSelected {
+    font-size: 1rem;
+  }
+
+  .msgBox {
+    width: 18rem;
+    position: absolute;
+    top: -300px;
+    left: -140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .msg {
+    font-size: 1.5rem;
+  }
 }
